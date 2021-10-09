@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", "sans-serif";
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  background-size: contain;
+  background-position: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card {
+  width: 88%;
+  max-width: 450px;
+  margin-top: 3.8rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.container .card__hero {
+  display: inline-block;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container .card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1.8rem;
+}
+
+.container .card__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.container .card__description {
+  margin-bottom: 1.5rem;
+  color: #7280a7;
+  line-height: 1.8rem;
+}
+
+.container .card__payment {
+  background-color: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+}
+
+.container .card__payment-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card__payment-music {
+  padding-right: 0.8rem;
+  padding-top: 0.2rem;
+}
+
+.container .card__payment-title {
+  padding-bottom: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.container .card__payment-price {
+  color: #7280a7;
+  font-weight: 400;
+}
+
+.container .card__payment a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #3829e0;
+}
+
+.container .card__payment a:hover {
+  opacity: 0.7;
+}
+
+.container .card__pay {
+  background: #3829e0;
+  width: 100%;
+  margin: 1.2rem 0;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+.container .card__pay:hover {
+  -webkit-box-shadow: 0px 21px 20px 0px rgba(55, 41, 244, 0.21);
+  box-shadow: 0px 21px 20px 0px rgba(55, 41, 244, 0.21);
+  opacity: 0.7;
+}
+
+.container .card__pay a {
+  color: white;
+  font-weight: 700;
+}
+
+.container .card__cancel a {
+  color: #7280a7;
+  font-weight: 700;
+}
+
+.container .card__cancel a:hover {
+  color: #1f2f56;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+  .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .card {
+    margin: unset;
+  }
+  .container .card__wrapper {
+    padding: 3.5rem 4rem;
+  }
+  .container .card__title {
+    font-size: 1.75rem;
+  }
+  .container .card__description {
+    font-size: 1.02rem;
+    line-height: 1.65rem;
+  }
+  .container .card__payment {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .container .card__payment-music {
+    margin: 0 0.5rem;
+  }
+  .container .card__payment-title {
+    font-size: 1.05rem;
+  }
+  .container .card__payment-price {
+    text-align: left;
+    font-size: 1.05rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

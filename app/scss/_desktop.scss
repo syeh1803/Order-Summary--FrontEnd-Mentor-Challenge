@@ -1,0 +1,43 @@
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+  .container {
+    align-items: center;
+
+    .card {
+      margin: unset;
+
+      &__wrapper {
+        padding: 3.5rem 4rem;
+      }
+
+      &__title {
+          font-size: 1.75rem;
+      }
+
+      &__description {
+          font-size: 1.02rem;
+          line-height: 1.65rem;
+      }
+
+      &__payment {
+          padding: 1rem;
+          margin-bottom: 1rem;
+      }
+
+      &__payment-music {
+          margin: 0 0.5rem;
+      }
+
+      &__payment-title {
+          font-size: 1.05rem;
+      }
+
+      &__payment-price {
+          text-align: left;
+          font-size: 1.05rem;
+      }
+    }
+  }
+}
